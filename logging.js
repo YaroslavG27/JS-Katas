@@ -4,13 +4,15 @@ function calculateDiscount(price, category) {
     let discount
     if (category === 'electronics') {
         discount = price * 0.10
+        console.log(discount)
     } else {
         discount = price * 0.05
+        console.log(discount)
     }
     return discount
 }
 
-const result = calculateDiscount(20, 'electronics')
+const result = calculateDiscount(20, 'shoes')
 console.log (result)
 
 // this is a function for multiply values
