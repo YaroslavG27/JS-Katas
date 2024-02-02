@@ -1,12 +1,11 @@
 function displayMessage(x) {
-    if (x > 0) {
-        let message = 'Hello, this is a scope problem!'
-        return message
-    } else {
-        let message = 'Hello'
-        return message
+    let message = 'Hello'
+    if (x) {
+        message = 'Hello, this is a scope problem!'
     }
+    return message
+
 }
 
-const scopeProblem = displayMessage(0)
+const scopeProblem = displayMessage(1)
 console.log(scopeProblem)
