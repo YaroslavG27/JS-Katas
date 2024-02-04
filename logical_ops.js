@@ -49,9 +49,17 @@
 // Vowels are "a", "e", "i", "o" and "u".
 // Create a function countVowels that takes an array of letters, and returns the number of vowels in the array.
 
-function countVowels(letters){
-    return letters.lenght
+function countVowels(letters) {
+    let vowelCount = 0;
+    for (let letter of letters) {
+        letter = letter.toLowerCase();
+        if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u') {
+            vowelCount++;
+        }
+    }
+
+    return vowelCount;
 }
 
-const numberOfLetters = countVowels([a,b,c,d,e])
-console.log(numberOfLetters)
+const letters = ['a', 'b', 'c', 'e', 'i', 'o', 'u'];
+console.log(countVowels(letters)); 
