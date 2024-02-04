@@ -40,27 +40,24 @@
 // If it's rainy but the temperature is 15 degrees or above, it's a "Museum day".
 // In all other cases, it's a "Casual day".
 
-function categorizeDay(temperature, weather){
-    if(temperature >= 25){
-        if(weather === 'sunny'){
-            return 'Beach day'
-        } else if(temperature < 25){
-            if(weather === 'sunny'){
-                return 'Park day'
-            } else if(temperature < 15){
-                if(weather === 'rainy'){
-                    return 'Stay home day'
-                } else if(temperature >= 15){
-                    if(weather === 'rainy'){
-                        return'Museum day'
-                    } else {
-                        return 'Casual day'
-                    }
-                }
+function categorizeDay(temperature, weather) {
+    if (temperature >= 25) {
+        if (weather === 'sunny') {
+            return 'Beach day';
+        } else {
+            return 'Casual day';
+        }
+    } else {
+        if (weather === 'sunny') {
+            return 'Park day';
+        } else {
+            if (temperature < 15) {
+                return 'Stay home day';
+            } else {
+                return 'Museum day';
             }
         }
     }
 }
-
-const whichDayIsToday = categorizeDay(15, 'rainy')
+const whichDayIsToday = categorizeDay(14, 'rainy')
 console.log(whichDayIsToday)
