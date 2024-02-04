@@ -36,12 +36,22 @@
 // The function should return 'true' if the user's role is either 'admin' or 'editor' and their account is active.
 // For all other scenarios, the function should return 'false'.
 
-function canAccess(role, isActive){
-    if (isActive === true && (role === 'admin' || role === 'editor')){
-        return true
-    }
-    return false
+// function canAccess(role, isActive){
+//     if (isActive === true && (role === 'admin' || role === 'editor')){
+//         return 'true'
+//     }
+//     return 'false'
+// }
+
+// const test4 = canAccess('user', false)
+// console.log(test4)
+
+// Vowels are "a", "e", "i", "o" and "u".
+// Create a function countVowels that takes an array of letters, and returns the number of vowels in the array.
+
+function countVowels(letters){
+    return letters.lenght
 }
 
-const test4 = canAccess('user', false)
-console.log(test4)
+const numberOfLetters = countVowels([a,b,c,d,e])
+console.log(numberOfLetters)
