@@ -59,5 +59,5 @@ function categorizeDay(temperature, weather) {
         }
     }
 }
-const whichDayIsToday = categorizeDay(14, 'rainy')
+const whichDayIsToday = categorizeDay(25, 'rainy')
 console.log(whichDayIsToday)
