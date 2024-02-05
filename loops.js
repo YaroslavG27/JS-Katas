@@ -3,10 +3,10 @@
 
 function sumNumbers(n){
     total = 0
-    for (let i = n; n >= 0; i = i + 1){
+    for (let i = 0; i <= n; i = i + 1){
         total = total + i
-        return total
     }
+    return total
 }
 const testLoop = sumNumbers(5)
 console.log(testLoop);
