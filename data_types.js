@@ -32,3 +32,26 @@
 
 // const displayNameTest = formatDisplayName(100, true)
 // console.log(displayNameTest);
+
+// Sum Numbers in Array
+// Create a function sumNumbers that takes an array as a parameter.
+// The array can contain a combination of numbers, strings and booleans.
+// The function should find all numbers in the array, add them and return the sum.
+// If there are no numbers, the function should return 0.
+
+function sumNumbers(contents){
+    let total = 0
+    if(typeof(content) === 'number'){
+        for ( let content of contents ){
+        total = total + content
+        }
+        return total
+    } else if (typeof(content) !== 'number'){
+        return total 
+    } else {
+        return 0
+    }
+}
+
+const sumTest = sumNumbers([2, 4, 6, 'hola'])
+console.log(sumTest);
