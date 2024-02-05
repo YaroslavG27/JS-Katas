@@ -54,3 +54,4 @@ function sumNumbers(contents){
 
 const sumTest = sumNumbers([4, 6, 2, 8, 'hola'])
 console.log(sumTest);
+
