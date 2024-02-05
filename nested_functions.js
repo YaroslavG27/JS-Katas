@@ -23,14 +23,28 @@
 
 // Automatic tests are not available for this kata. Please use the tests below in NodeJS.
 
-function calcAreaRectangle(a, b){
-    return (a * b) + 'rectangle'
-}
+// function calcAreaRectangle(base, height) {
+//     return base * height;
+// }
 
-function calcAreaTriangle(a, b){
-    return (a * b / 2) + 'triangle'
-}
+// function calcAreaTriangle(base, height) {
+//     return (base * height) / 2;
+// }
 
-function calcArea(c, d, form){
-    if ()
-}
+// function calcArea(base, height, figure) {
+//     if (figure === 'rectangle') {
+//         return calcAreaRectangle(base, height);
+//     } else if (figure === 'triangle') {
+//         return calcAreaTriangle(base, height);
+//     } else {
+//         return null;
+//     }
+// }
+
+// console.log(calcArea(100, 5, 'rectangle')); // 500
+// console.log(calcArea(100, 50, "triangle")); // 2500
+// console.log(calcArea(10, 10, "rectangle")); // 100
+// console.log(calcArea(10, 10, "triangle")); // 50
+// console.log(calcArea(30, 20)); // null
+// console.log(calcArea(30, 20, "cube")); // null
+
