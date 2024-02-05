@@ -4,3 +4,13 @@
 
 // Automatic tests are not available for this kata, please use the tests below in NodeJs.
 
+function calculateSquare(n){
+    return n * n
+}
+
+function sumOfSquares(a, b){
+    return calculateSquare(a) + calculateSquare(b)
+}
+
+const sumOfSquaresTest = sumOfSquares(4, 10)
+console.log(sumOfSquaresTest);
