@@ -22,3 +22,15 @@
 // If a different string, or no string, is passed, return null.
 
 // Automatic tests are not available for this kata. Please use the tests below in NodeJS.
+
+function calcAreaRectangle(a, b){
+    return (a * b) + 'rectangle'
+}
+
+function calcAreaTriangle(a, b){
+    return (a * b / 2) + 'triangle'
+}
+
+function calcArea(c, d, form){
+    if ()
+}
