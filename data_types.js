@@ -41,17 +41,16 @@
 
 function sumNumbers(contents){
     let total = 0
-    if(typeof(content) === 'number'){
-        for ( let content of contents ){
-        total = total + content
+    for (let content of contents){
+        if (typeof(content) === 'number'){
+            total = total + content
+        } else if (typeof(content) !== 'number'){
+            return 0
+        } else {
+            return total
         }
-        return total
-    } else if (typeof(content) !== 'number'){
-        return total 
-    } else {
-        return 0
     }
 }
 
-const sumTest = sumNumbers([2, 4, 6, 'hola'])
+const sumTest = sumNumbers([4, 6, 2, 8, 'hola'])
 console.log(sumTest);
