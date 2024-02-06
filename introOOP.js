@@ -25,3 +25,11 @@
 //     }
 // }
 // console.log(villa)
+
+// The following object is incorrect, fix it:
+
+// let team = {
+//     name: 'Spartans',
+//     speed: 90
+// }
+// console.log(team);
