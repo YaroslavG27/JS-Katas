@@ -98,21 +98,37 @@
 // Within this object, there are two properties array1 and array2, each containing an array of numbers.
 // The function should calculate the sum of all positive numbers from both arrays combined and return the total sum.
 
-function sumPositiveNumbers(object){
-    let totalSum = 0
-    for (let number of object.array1){
-        if(number > 0){
-            totalSum = totalSum + number
-        } 
-    } for (let number of object.array2){
-        if(number > 0){
-            totalSum = totalSum + number
-        }
-    }
-    return totalSum
-}   
+// function sumPositiveNumbers(object){
+//     let totalSum = 0
+//     for (let number of object.array1){
+//         if(number > 0){
+//             totalSum = totalSum + number
+//         } 
+//     } for (let number of object.array2){
+//         if(number > 0){
+//             totalSum = totalSum + number
+//         }
+//     }
+//     return totalSum
+// }   
 
-console.log(sumPositiveNumbers({
-    "array1": [1, -3, 5, 7],
-    "array2": [10, -2, 4, -5]
-}))
+// console.log(sumPositiveNumbers({
+//     "array1": [1, -3, 5, 7],
+//     "array2": [10, -2, 4, -5]
+// }))
+
+// Your task is to create a function named getEvenScorePlayers.
+// This function should take an array of objects as its parameter.
+// Each object represents a player with two properties: name (a string) and score (a number or a string).
+// The function should select the players whose scores are even numbers (and specifically not strings), concatenate their names into a single string with spaces, and return this string.
+
+function getEvenScorePlayers(objects){
+    let singleString = ''
+    for(let object of objects){
+        if (typeof object.score === 'number' && object.score % 2 === 0){
+            singleString += object.name + ' '
+        }
+    } return singleString
+}
+
+console.log(getEvenScorePlayers([{"name": "Alice", "score": 20}, {"name": "Bob", "score": 15}, {"name": "Charlie", "score": 30}, {"name": "Daisy", "score": "40"}]));
