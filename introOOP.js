@@ -53,3 +53,22 @@
 //   }
 
 //   console.log(countWindows(house));
+
+// Your task is to create a function named getNestedProperty.
+// This function should take an object as its parameter.
+// The object will have a nested structure, with an object inside the main object.
+// You need to access the email property inside the nested object and return its value.
+
+// let users = { //This is the object
+//    contact: { //This is the object nested in the main object
+//         email: 'alice@example.com'
+//    }
+// }
+
+// function getNestedProperty(users){ //This is the function that take an object as a parameter
+//     return users.contact.email //This is the way to access the main object and navigate trough it and return it
+// }
+
+// console.log(getNestedProperty(users));
+// //    [{email: 'alice@example.com' }, {email: 'bob@example.com'}]
+
