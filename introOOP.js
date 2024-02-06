@@ -72,3 +72,28 @@
 // console.log(getNestedProperty(users));
 // //    [{email: 'alice@example.com' }, {email: 'bob@example.com'}]
 
+// Create a function named calculateTotalPrice.
+// This function should take an array of objects as its parameter.
+// Each object in the array represents an item, and each item has a price property.
+// The function should calculate the total price of all items in the array by summing up their individual prices and return the total sum.
+
+// let a = [{name: "Bag", price: 90}, {name: "Shoes", price: 100}]
+// calculateTotalPrice(a) // 190
+// let b = [{name: "Car", price: 1000}, {name: "Apple", price: 5}, {name: "Laptop", price: 500}]
+// calculateTotalPrice(b) // 1505
+
+// function calculateTotalPrice(objects){ //This function will take an array of objects as a parameter 
+//     let sum = 0
+//     for(let object of objects){
+//         if(typeof object.price === 'number'){
+//             sum = sum + object.price
+//         }
+//     }
+//     return sum
+// }
+// console.log(calculateTotalPrice([{"name": "Bag", "price": 90}, {"name": "Shoes", "price": 100}]))
+
+// Your task is to create a function named sumPositiveNumbers.
+// This function should take an object as its parameter.
+// Within this object, there are two properties array1 and array2, each containing an array of numbers.
+// The function should calculate the sum of all positive numbers from both arrays combined and return the total sum.
