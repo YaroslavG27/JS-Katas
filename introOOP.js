@@ -97,3 +97,22 @@
 // This function should take an object as its parameter.
 // Within this object, there are two properties array1 and array2, each containing an array of numbers.
 // The function should calculate the sum of all positive numbers from both arrays combined and return the total sum.
+
+function sumPositiveNumbers(object){
+    let totalSum = 0
+    for (let number of object.array1){
+        if(number > 0){
+            totalSum = totalSum + number
+        } 
+    } for (let number of object.array2){
+        if(number > 0){
+            totalSum = totalSum + number
+        }
+    }
+    return totalSum
+}   
+
+console.log(sumPositiveNumbers({
+    "array1": [1, -3, 5, 7],
+    "array2": [10, -2, 4, -5]
+}))
