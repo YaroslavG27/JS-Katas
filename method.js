@@ -17,7 +17,7 @@ let greeter = {
         if(!name){
             return 'Hello guest'
         }
-        return 'Helo ' + name
+        return 'Hello ' + name
     }
 }
 
