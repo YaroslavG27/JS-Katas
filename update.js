@@ -40,7 +40,7 @@ console.log(markAsValue(b, 'denied'));*/
 // The object contains a nested array of strings. The function should update the element in the array at the index specified by the number parameter to the value provided by the string parameter.
 // After updating, the function should return the modified object.
 
-let a = {"fruits": ["apple", "banana"]}
+/*let a = {"fruits": ["apple", "banana"]}
 // updateNestedArray(a, 1, "cherry") // {"fruits": ["apple", "cherry"]}
 let b = {"fruits": ["pineapple", "strawberry"]}
 // updateNestedArray(b, 0, "kiwi") // {"fruits": ["kiwi", "strawberry"]}
@@ -51,4 +51,23 @@ function updateNestedArray(object, num, fruit){
 }
 
 console.log(updateNestedArray(a, 1, 'banana'));
-console.log(updateNestedArray(b, 0, 'kiwi'));
+console.log(updateNestedArray(b, 0, 'kiwi'));*/
+
+// Write a function named reducePrices.
+// The function takes an array of objects as a parameter. Each object represents a product with a price property.
+// The task is to reduce the price property of each product by 10%.
+// Return the array with the updated product objects.
+
+let a = [{'name':'Laptop','price':1000},{'name':'Phone','price':500}]
+let b = [{'name':'Camera','price':800},{'name':'Headphones','price':200}]
+
+function reducePrices(arr){
+    
+    for (let objects of arr){
+        objects.price = objects.price - (objects.price * 0.1)
+    }
+    return arr
+}
+
+console.log(reducePrices(a));
+console.log(reducePrices(b));
