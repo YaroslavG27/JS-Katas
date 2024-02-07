@@ -19,22 +19,22 @@ console.log(addAge(b, numB));*/
 // This function should take two parameters: an array of objects and an array of numbers of equal length.
 // The function should add the numbers in the second array to the objects as age, following the corresponding index, and return the updated array of objects.
 
-let arrO1 = [{'name':'Alice'},{'name':'Bob'}]
-let arrN1 = [21,51]
-let arrO2 = [{'name':'Tom'},{'name':'Tim'},{'name':'Tam'}]
-let arrN2 = [30,31,32]
+let people = [{'name':'Alice'},{'name':'Bob'}]
+let ages = [21,51]
+// let people = [{'name':'Tom'},{'name':'Tim'},{'name':'Tam'}]
+// let ages = [30,31,32]
 
-function addAges(arrO, arrN){
+function addAges(people, ages){
     let i = 0
-    for (let arr of arrO){
-            arr.age = arrN[i]
+    for (let person of people){
+            person.age = ages[i]
             i = i + 1
         }
-        return arrO
+        return people
     }
 
-console.table(addAges(arrO1, arrN1));
-console.table(addAges(arrO2, arrN2));
+console.table(addAges(people, ages));
+// console.table(addAges(people, ages));
 
 // Create a function formatData that receives an array of products from a database.
 // Unfortunately, the data is corrupt, some of the objects in the array have a price field of type number but others are strings.
