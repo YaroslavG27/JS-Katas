@@ -1,11 +1,11 @@
 // Create a house object with the properties:
 
-// house = {
-//     rooms: 2,
-//     windows: 2,
-//     bathroom: 1,
-//     material: 'stone'
-// }
+house = {
+    rooms: 2,
+    windows: 2,
+    bathroom: 1,
+    material: 'stone'
+}
 
 // Create a villa object with the properties:
 
@@ -16,43 +16,43 @@
 // windows = 2
 // doors = 1
 
-// let villa = {
-//     windows: 6,
-//     material: 'stone',
-//     livingRoom: {
-//         windows: 2,
-//         doors: 1
-//     }
-// }
-// console.log(villa)
+let villa = {
+    windows: 6,
+    material: 'stone',
+    livingRoom: {
+        windows: 2,
+        doors: 1
+    }
+}
+console.log(villa)
 
 // The following object is incorrect, fix it:
 
-// let team = {
-//     name: 'Spartans',
-//     speed: 90
-// }
-// console.log(team);
+let team = {
+    name: 'Spartans',
+    speed: 90
+}
+console.log(team);
 
 // Create a function countWindows that counts, then returns, the total number of windows in the house parameter object, by accessing each room's windows:
 
-// let house = {
-//     livingRoom: {
-//       windows: 4
-//     },
-//     bedroom: {
-//       windows: 2
-//     },
-//     kitchen: {
-//       windows: 1
-//     }
-//   }
+let house = {
+    livingRoom: {
+      windows: 4
+    },
+    bedroom: {
+      windows: 2
+    },
+    kitchen: {
+      windows: 1
+    }
+  }
 
-//   function countWindows(house){
-//     return house.livingRoom.windows + house.bedroom.windows + house.kitchen.windows
-//   }
+  function countWindows(house){
+    return house.livingRoom.windows + house.bedroom.windows + house.kitchen.windows
+  }
 
-//   console.log(countWindows(house));
+  console.log(countWindows(house));
 
 // Your task is to create a function named getNestedProperty.
 // This function should take an object as its parameter.
@@ -65,57 +65,58 @@
 //    }
 // }
 
-// function getNestedProperty(users){ //This is the function that take an object as a parameter
-//     return users.contact.email //This is the way to access the main object and navigate trough it and return it
-// }
+function getNestedProperty(users){ //This is the function that take an object as a parameter
+    return users.contact.email //This is the way to access the main object and navigate trough it and return it
+}
 
-// console.log(getNestedProperty(users));
-// //    [{email: 'alice@example.com' }, {email: 'bob@example.com'}]
+console.log(getNestedProperty(users));
+//    [{email: 'alice@example.com' }, {email: 'bob@example.com'}]
 
 // Create a function named calculateTotalPrice.
 // This function should take an array of objects as its parameter.
 // Each object in the array represents an item, and each item has a price property.
 // The function should calculate the total price of all items in the array by summing up their individual prices and return the total sum.
 
-// let a = [{name: "Bag", price: 90}, {name: "Shoes", price: 100}]
+let a = [{name: "Bag", price: 90}, {name: "Shoes", price: 100}]
 // calculateTotalPrice(a) // 190
-// let b = [{name: "Car", price: 1000}, {name: "Apple", price: 5}, {name: "Laptop", price: 500}]
+let b = [{name: "Car", price: 1000}, {name: "Apple", price: 5}, {name: "Laptop", price: 500}]
 // calculateTotalPrice(b) // 1505
 
-// function calculateTotalPrice(objects){ //This function will take an array of objects as a parameter 
-//     let sum = 0
-//     for(let object of objects){
-//         if(typeof object.price === 'number'){
-//             sum = sum + object.price
-//         }
-//     }
-//     return sum
-// }
-// console.log(calculateTotalPrice([{"name": "Bag", "price": 90}, {"name": "Shoes", "price": 100}]))
+function calculateTotalPrice(objects){ //This function will take an array of objects as a parameter 
+    let sum = 0
+    for(let object of objects){
+        if(typeof object.price === 'number'){
+            sum = sum + object.price
+        }
+    }
+    return sum
+}
+console.log(calculateTotalPrice(a))
+console.log(calculateTotalPrice(b))
 
 // Your task is to create a function named sumPositiveNumbers.
 // This function should take an object as its parameter.
 // Within this object, there are two properties array1 and array2, each containing an array of numbers.
 // The function should calculate the sum of all positive numbers from both arrays combined and return the total sum.
 
-// function sumPositiveNumbers(object){
-//     let totalSum = 0
-//     for (let number of object.array1){
-//         if(number > 0){
-//             totalSum = totalSum + number
-//         } 
-//     } for (let number of object.array2){
-//         if(number > 0){
-//             totalSum = totalSum + number
-//         }
-//     }
-//     return totalSum
-// }   
+function sumPositiveNumbers(object){
+    let totalSum = 0
+    for (let number of object.array1){
+        if(number > 0){
+            totalSum = totalSum + number
+        } 
+    } for (let number of object.array2){
+        if(number > 0){
+            totalSum = totalSum + number
+        }
+    }
+    return totalSum
+}   
 
-// console.log(sumPositiveNumbers({
-//     "array1": [1, -3, 5, 7],
-//     "array2": [10, -2, 4, -5]
-// }))
+console.log(sumPositiveNumbers({
+    "array1": [1, -3, 5, 7],
+    "array2": [10, -2, 4, -5]
+}))
 
 // Your task is to create a function named getEvenScorePlayers.
 // This function should take an array of objects as its parameter.
