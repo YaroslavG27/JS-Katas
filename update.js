@@ -58,7 +58,7 @@ console.log(updateNestedArray(b, 0, 'kiwi'));*/
 // The task is to reduce the price property of each product by 10%.
 // Return the array with the updated product objects.
 
-let a = [{'name':'Laptop','price':1000},{'name':'Phone','price':500}]
+/*let a = [{'name':'Laptop','price':1000},{'name':'Phone','price':500}]
 let b = [{'name':'Camera','price':800},{'name':'Headphones','price':200}]
 
 function reducePrices(arr){
@@ -70,4 +70,5 @@ function reducePrices(arr){
 }
 
 console.log(reducePrices(a));
-console.log(reducePrices(b));
+console.log(reducePrices(b));*/
+
