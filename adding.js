@@ -25,12 +25,13 @@ let arrO2 = [{'name':'Tom'},{'name':'Tim'},{'name':'Tam'}]
 let arrN2 = [30,31,32]
 
 function addAges(arrO, arrN){
-    
+    let i = 0
     for (let arr of arrO){
-        arr.age = arrN[0]++
+            arr.age = arrN[i]
+            i = i + 1
+        }
+        return arrO
     }
-    return arrO
-}
 
 console.table(addAges(arrO1, arrN1));
 console.table(addAges(arrO2, arrN2));
