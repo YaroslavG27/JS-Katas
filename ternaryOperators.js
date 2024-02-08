@@ -15,7 +15,7 @@ console.log(numerToBoolean(-30))*/
 
 function halfOrDouble(numbers){
     for(let i = 0; i < numbers.length ; i++){
-        numbers[i] = (numbers[i] < 10) ? numbers[i] * 2 : numbers[i] / 2
+        numbers[i] = (numbers[i] > 10) ? numbers[i] / 2 : numbers[i] * 2
     }
     return numbers
 }
