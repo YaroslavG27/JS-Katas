@@ -14,3 +14,12 @@ console.log(decrementValue(100))*/
 
 // Replace the sum calculation in the following code with the Addition Assignment operator.
 // Don't delete the variable c.
+
+function addTen(a) {
+    let c = 10
+    c += a
+    return c
+}
+
+console.log(addTen(5))
+console.log(addTen(10))
