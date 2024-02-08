@@ -23,7 +23,7 @@ console.log(findSmallestNumber(8,1)) */
 // The function should then return the array of objects with their new correct field.
 
 
-let squares = [{'value':100,'squareRoot':10},{'value':25,'squareRoot':6}]
+/*let squares = [{'value':100,'squareRoot':10},{'value':25,'squareRoot':6}]
 
 function checkSquareRoot(squares){
     for(let square of squares){
@@ -36,4 +36,16 @@ function checkSquareRoot(squares){
     return squares
 }
 
-console.table(checkSquareRoot(squares))
+console.table(checkSquareRoot(squares))*/
+
+// Create a function winTheLottery that takes an array of 4 strings, as per the tests below.
+// The function should generate a random number between 0 and 4 which will be used to extract one of the strings from the array.
+// The functions should then return the extracted string.
+
+let lottery = ['lose', 'lose', 'win', 'lose']
+
+function winTheLottery(checkLuck){
+    return checkLuck[Math.floor(Math.random() * 4)]
+}
+
+console.log(winTheLottery(lottery))
