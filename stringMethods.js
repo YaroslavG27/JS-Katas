@@ -39,19 +39,11 @@ console.log(splitStringIntoArray('one-two-three','-'))*/
 // Assume that there is only 1 string containing the keyword.
 
 /*function search(array, keyword){
-    let word = ''
-    // for (let i = 0; i < array.length; i++){
-    //    array[i].includes(keyword)
-    //    word = array[i]
-    // }
-    // return word
-    for (let arr of array){
-        if(arr.includes(keyword)){
-            word = arr
-        }
-        return word
+    for (let i = 0; i < array.length; i++){
+       array[i].includes(keyword) ? word = array[i] : word
     }
-}
+    return word
+    }
 
 console.log(search(['hello world','good morning'],'world'))
 console.log(search(['123456','911'],'9'))*/
@@ -70,7 +62,7 @@ console.log(flipString('Haiku Academy'))*/
 // If the number is not a number, if it's falsy or if it's not 12 digits, return the error message.
 
 function formatPhoneNumber(num){
-    return String(num).split('')
+
 }
 
 console.log(formatPhoneNumber(123456789012))
