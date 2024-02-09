@@ -39,7 +39,7 @@ console.log(reverseArray(['a','b','c']))*/
 // The array may have a falsy value at the beginning or at the end (or both).
 // The function should remove these falsy values and return the clean array.
 
-function removeEmptySpots(array){
+/*function removeEmptySpots(array){
     if(typeof array[array.length - 1] !== 'number' && typeof array[array.length - 1] !== 'string' ||  array[array.length - 1] === 0){
         array.pop()
     }
@@ -52,6 +52,15 @@ function removeEmptySpots(array){
 console.log(removeEmptySpots([0,2,3,4,0]))
 console.log(removeEmptySpots([null,'a','b','c']))
 console.log(removeEmptySpots([10,11,0,50,false]))
-console.log(removeEmptySpots([0,100,'a','b',50,null]))
+console.log(removeEmptySpots([0,100,'a','b',50,null]))*/
+
+// Create a function stringRepeat that takes a number and a string, then returns the string repeated as many times as the number.
+
+function stringRepeat(num, strg){
+    
+}
+
+console.log(stringRepeat(5, 'hi'))
+console.log(stringRepeat(2, 'hola'))
 
 
