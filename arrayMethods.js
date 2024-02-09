@@ -16,7 +16,7 @@ console.log(returnLength([]))*/
 // Each object contains an array of sports.
 // The function should add a property sportsLength to each object, with the length of its sports array.
 
-function addSportsLengths(objects){
+/*function addSportsLengths(objects){
     for (let object of objects){
        console.log(object.sportsLength = object.sports.length)
     }
@@ -24,4 +24,18 @@ function addSportsLengths(objects){
 }
 
 console.table(addSportsLengths([{'name':'John','sports':['football']},{'name':'Alice','sports':['tennis','golf']}]))
-console.table(addSportsLengths([{'name':'Bob','sports':[]}]))
+console.table(addSportsLengths([{'name':'Bob','sports':[]}]))*/
+
+// Create a function reverseArray that takes an array and returns the array reversed.
+
+/*function reverseArray(array){
+    return array.reverse()
+}
+
+console.log(reverseArray([1,2,3,4]))
+console.log(reverseArray(['a','b','c']))*/
+
+// Create a function removeEmptySpots that takes an array as a parameter.
+// The array may have a falsy value at the beginning or at the end (or both).
+// The function should remove these falsy values and return the clean array.
+
