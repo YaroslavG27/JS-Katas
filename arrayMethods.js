@@ -40,12 +40,18 @@ console.log(reverseArray(['a','b','c']))*/
 // The function should remove these falsy values and return the clean array.
 
 function removeEmptySpots(array){
-    if(!array[0] || !array[array.length - 1]){
-
+    if(typeof array[array.length - 1] !== 'number' && typeof array[array.length - 1] !== 'string' ||  array[array.length - 1] === 0){
+        array.pop()
     }
+    if(typeof array[0] !== 'number' && typeof array[0] !== 'string' || array[0] === 0){
+        array.shift()
+    }
+    return array
 }
 
 console.log(removeEmptySpots([0,2,3,4,0]))
 console.log(removeEmptySpots([null,'a','b','c']))
 console.log(removeEmptySpots([10,11,0,50,false]))
 console.log(removeEmptySpots([0,100,'a','b',50,null]))
+
+
