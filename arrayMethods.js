@@ -57,7 +57,11 @@ console.log(removeEmptySpots([0,100,'a','b',50,null]))*/
 // Create a function stringRepeat that takes a number and a string, then returns the string repeated as many times as the number.
 
 function stringRepeat(num, strg){
-    
+   let strng = strg.split()
+   for (i = 0; i < num -1; i++){
+    strng.push(strng[i])
+   }
+   return strng.join('')
 }
 
 console.log(stringRepeat(5, 'hi'))
