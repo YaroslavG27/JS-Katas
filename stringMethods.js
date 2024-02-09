@@ -27,3 +27,10 @@ console.log(isLongerThan('',0))*/
 
 // Create a JavaScript function named splitStringIntoArray.
 // This function should take two parameters: a string and a delimiter. It should divide the string into an array of substrings, separated by the specified delimiter, and return the resulting array.
+
+/*const splitStringIntoArray = (strng,delimiter) => strng.split(delimiter)
+
+console.log(splitStringIntoArray('apple,banana,cherry',','))
+console.log(splitStringIntoArray('Hello World',' '))
+console.log(splitStringIntoArray('one-two-three','-'))*/
+
