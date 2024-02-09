@@ -34,3 +34,32 @@ console.log(splitStringIntoArray('apple,banana,cherry',','))
 console.log(splitStringIntoArray('Hello World',' '))
 console.log(splitStringIntoArray('one-two-three','-'))*/
 
+// Create a function search that takes two parameters: an array of strings, and a string keyword.
+// The function should return the string from the array that contains the keyword.
+// Assume that there is only 1 string containing the keyword.
+
+/*function search(array, keyword){
+    let word = ''
+    // for (let i = 0; i < array.length; i++){
+    //    array[i].includes(keyword)
+    //    word = array[i]
+    // }
+    // return word
+    for (let arr of array){
+        if(arr.includes(keyword)){
+            word = arr
+        }
+        return word
+    }
+}
+
+console.log(search(['hello world','good morning'],'world'))
+console.log(search(['123456','911'],'9'))*/
+
+// Create a function flipString that takes a string and returns the string flipped.
+
+const flipString = (strng) => strng.split('').reverse().join('')
+
+console.log(flipString('Hello'))
+console.log(flipString(''))
+console.log(flipString('Haiku Academy'))
