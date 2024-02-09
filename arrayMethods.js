@@ -18,7 +18,7 @@ console.log(returnLength([]))*/
 
 /*function addSportsLengths(objects){
     for (let object of objects){
-       console.log(object.sportsLength = object.sports.length)
+       object.sportsLength = object.sports.length
     }
     return objects
 }
@@ -39,3 +39,13 @@ console.log(reverseArray(['a','b','c']))*/
 // The array may have a falsy value at the beginning or at the end (or both).
 // The function should remove these falsy values and return the clean array.
 
+function removeEmptySpots(array){
+    if(!array[0] || !array[array.length - 1]){
+
+    }
+}
+
+console.log(removeEmptySpots([0,2,3,4,0]))
+console.log(removeEmptySpots([null,'a','b','c']))
+console.log(removeEmptySpots([10,11,0,50,false]))
+console.log(removeEmptySpots([0,100,'a','b',50,null]))
