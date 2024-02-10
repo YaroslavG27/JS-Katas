@@ -38,7 +38,7 @@ console.log(splitStringIntoArray('one-two-three','-'))*/
 // The function should return the string from the array that contains the keyword.
 // Assume that there is only 1 string containing the keyword.
 
-function search(array, keyword){
+/*function search(array, keyword){
     let word = ''
     for (let i = 0; i < array.length; i++){
        array[i].includes(keyword) ? word = array[i] : word
@@ -47,7 +47,7 @@ function search(array, keyword){
     }
 
 console.log(search(['hello world','good morning'],'world'))
-console.log(search(['123456','911'],'9'))
+console.log(search(['123456','911'],'9'))*/
 
 // Create a function flipString that takes a string and returns the string flipped.
 
