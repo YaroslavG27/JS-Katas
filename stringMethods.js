@@ -62,12 +62,17 @@ console.log(flipString('Haiku Academy'))*/
 // Assume the phone numbers never start with a zero.
 // If the number is not a number, if it's falsy or if it's not 12 digits, return the error message.
 
-/*function formatPhoneNumber(num){
-  
+function formatPhoneNumber(number){
+    let numberString = String(number)
+    if(!numberString || numberString.length !== 12){
+        return 'invalid number'
+    }
+    return `${numberString.slice(0,3)}-${numberString.slice(3,6)}-${numberString.slice(6,9)}-${numberString.slice(9,12)}`
 }
 
-console.log(formatPhoneNumber(123456789012))
-console.log(formatPhoneNumber(123))
-console.log(formatPhoneNumber(999999999999))
-console.log(formatPhoneNumber(783543777241))
-console.log(formatPhoneNumber(null))*/
+// Ejemplo de uso
+console.log(formatPhoneNumber(123456789012)); // Salida esperada: "123-456-789-012"
+console.log(formatPhoneNumber(123)); // Salida esperada: "Error: El número no es válido o no tiene 12 dígitos."
+console.log(formatPhoneNumber(999999999999)); // Salida esperada: "Error: El número no es válido o no tiene 12 dígitos."
+console.log(formatPhoneNumber(783543777241)); // Salida esperada: "Error: El número no es válido o no tiene 12 dígitos."
+console.log(formatPhoneNumber(null)); 
