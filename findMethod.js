@@ -15,13 +15,18 @@ console.log(findPerson([{'name':'Bob','age':37},{'name':'Alice','age':25}],'Alic
 // It should use the find() method to search through the array and return the product object that has the matching ID.
 // If no product with the given ID is found, the function should return null.
 
-/*function findProductById(objects, identification){
-    return objects.find(object => object.id === identification)
+function findProductById(products, productsId){
+    let matchedProduct = products.find(product => product.id === productsId)
+    if(!matchedProduct){
+        return null
     }
+    return matchedProduct
+}
+    
 
 console.log(findProductById([{'id':1,'name':'Smartphone'},{'id':2,'name':'Laptop'},{'id':3,'name':'Tablet'}],2))
 console.log(findProductById([{'id':109,'name':'Keyboard'},{'id':107,'name':'Duck'}],109))
-console.log(findProductById([{'id':109,'name':'Keyboard'},{'id':107,'name':'Duck'}],20))*/
+console.log(findProductById([{'id':109,'name':'Keyboard'},{'id':107,'name':'Duck'}],20))
 
 // You are given a function that attempts to find and return a user object from an array of users by a given username.
 // However, the find() method is being used incorrectly in this function.
@@ -40,9 +45,11 @@ console.log(findUserByUsername([{'username':'wonderwoman','password':'amazon'},{
 // The function should find the product with the given ID and increase its price by 10%.
 // The function should return a new array with the updated product objects.
 
-function replaceProductPrice(products, productsId){
-    return products.find(product => product.id === productsId)
+/*function replaceProductPrice(products, productsId){
+     let matchedPrice = products.find(product => product.id === productsId)
+     matchedPrice.price = matchedPrice.price + (matchedPrice.price * 0.1)
+     return products
 }
 
 console.log(replaceProductPrice([{'id':1,'price':100},{'id':2,'price':200}],1))
-console.log(replaceProductPrice([{'id':1,'price':100},{'id':2,'price':200}],2))
+console.log(replaceProductPrice([{'id':1,'price':100},{'id':2,'price':200}],2))*/
