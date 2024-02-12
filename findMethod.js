@@ -27,9 +27,22 @@ console.log(findProductById([{'id':109,'name':'Keyboard'},{'id':107,'name':'Duck
 // However, the find() method is being used incorrectly in this function.
 // Your task is to identify the mistake and correct the function so that it properly uses find().
 
-function findUserByUsername(users, username) {
+/*function findUserByUsername(users, username) {
    return users.find(user => user.username === username)
 }
 
 console.log(findUserByUsername([{'username':'spiderman','password':'web'},{'username':'batman','password':'dark'}],'batman'))
-console.log(findUserByUsername([{'username':'wonderwoman','password':'amazon'},{'username':'superman','password':'krypto'}],'wonderwoman'))
+console.log(findUserByUsername([{'username':'wonderwoman','password':'amazon'},{'username':'superman','password':'krypto'}],'wonderwoman'))*/
+
+// Write a JavaScript function named replaceProductPrice.
+// This function should take two parameters: an array of product objects and a product ID.
+// Each product object contains an id, a name, and a price.
+// The function should find the product with the given ID and increase its price by 10%.
+// The function should return a new array with the updated product objects.
+
+function replaceProductPrice(products, productsId){
+    return products.find(product => product.id === productsId)
+}
+
+console.log(replaceProductPrice([{'id':1,'price':100},{'id':2,'price':200}],1))
+console.log(replaceProductPrice([{'id':1,'price':100},{'id':2,'price':200}],2))
