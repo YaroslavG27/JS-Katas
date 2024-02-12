@@ -4,7 +4,7 @@
 
 /*function sumNumbers(numbers) {
     let sum = 0
-    return numbers.reduce((number, sum) => sum + number)
+    return numbers.reduce((sum, number) => sum + number)
 }
 
 console.log(sumNumbers([1,2,3,4,5]))
