@@ -20,3 +20,13 @@ getFirstTodo() */
 
 // Test the following:
 
+const getTodo = async (num) => {
+    let response = await axios.get(
+      `https://jsonplaceholder.typicode.com/todos/${num}`
+    )
+    return response.data
+  }
+  
+  console.log(await getTodo(1))
+  console.log(await getTodo(2))
+  console.log(await getTodo(3))
