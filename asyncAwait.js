@@ -9,3 +9,10 @@ const search = async () => {
     let messages = await getMessages();
     return messages;
   };
+
+//   The following function is wrong, fix it.
+
+const filterArray = async () => {
+    let data = await getData()
+    return data
+  }
