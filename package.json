@@ -1,0 +1,12 @@
+{
+  "name": "js-katas",
+  "version": "1.0.0",
+  "description": "katas for practice and improve my ouw skils",
+  "main": "adding.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
